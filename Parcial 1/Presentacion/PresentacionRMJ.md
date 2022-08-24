@@ -3,7 +3,6 @@
 **Historial Academico**  
 
 | Hitorial Academico |
-|-----------------------|
 | Nombre de la materia | Acreditada |
 | ----------- | ----------- |
 | Fundamentos de Programación | Si  |
