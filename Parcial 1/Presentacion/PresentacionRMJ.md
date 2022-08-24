@@ -8,8 +8,8 @@
 | Matematicas Discretas  | Si    |
 
 ***Lenguajes de programacion que domino***
--C++
--C#
--Html
++ C++
+* C#
+- Html
 
 
