@@ -35,7 +35,9 @@
 | QUIMICA| 70.00|
 
 # Experiencia Laboral
- >**Cajero**   todos los empleos laborales me desempeñe en el puesto de cajero  
+ >**Cajero**
+ 
+ todos los empleos laborales me desempeñe en el puesto de cajero  
  >Tome experiencia en la venta de articulos  
  >Cortes de caja  
  >Cierre de Turno
