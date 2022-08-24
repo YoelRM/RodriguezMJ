@@ -1,6 +1,6 @@
 # Presentacion Rodriguez Muñoz Joel
 
-![LogoTecnologicoDeNuevoLaredo]http://sic.cultura.gob.mx/images/63959
+![LogoTecnologicoDeNuevoLaredo](http://sic.cultura.gob.mx/images/63959)
 
 
 > Bueno mi Nombre es Joel Rodriguez Muñoz Tengo 21 Años y Actualmente estoy cursando la carrera de ingenieria en Sistemas computacionales en el Instituto Tecnologico de Nuevo LAredo
