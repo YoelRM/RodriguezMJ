@@ -22,7 +22,7 @@
 >Mi Genero Favorito: Pues en realidad escucho de un poco de todo desde rock,pop,rap,instrumental,etc.
 
 ## Especialidad
->mi Meta es especializarme en la Gestion de Datos o tambien conocida como Redes
+>Mi Meta es especializarme en la Gestion de Datos antes llamada Redes
 
 ## ***Lenguajes de programacion que domino***
 + C
@@ -30,7 +30,7 @@
 - C#
 - Java
 
-## *** Lenguajes que me gustaria aprender***
+## ***Lenguajes que me gustaria aprender***
 + JavaScrit
 + Sql
 + Python
