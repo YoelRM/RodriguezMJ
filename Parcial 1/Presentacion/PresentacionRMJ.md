@@ -2,7 +2,9 @@
 
 **Historial Academico**  
 
-| Nombre de la materia      | Acreditada |
+| Hitorial Academico |
+|-----------------------|
+| Nombre de la materia | Acreditada |
 | ----------- | ----------- |
 | Fundamentos de Programación | Si  |
 | Matematicas Discretas  | Si    |
