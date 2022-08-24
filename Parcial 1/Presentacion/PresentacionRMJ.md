@@ -3,7 +3,7 @@
 ## **Historial Academico**  
 
 | Nombre de la materia | Acreditada |
-| ----------- | ----------- | 
+| ----------- | :-----------: | 
 | FUNDAMENTOS DE PROGRAMACIÓN | 77.00 |
 | MATEMATICAS DISCRETAS |  85.00|
 | PROGRAMACION ORIENTADA A OBJETOS | 82.00|
