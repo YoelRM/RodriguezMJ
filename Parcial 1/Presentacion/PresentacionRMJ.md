@@ -1,6 +1,6 @@
 # Presentacion Rodriguez Muñoz Joel
 
-**Historial Academico**  
+# **Historial Academico**  
 
 | Nombre de la materia | Acreditada |
 | ----------- | ----------- |
