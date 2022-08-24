@@ -1,5 +1,9 @@
 # Presentacion Rodriguez Muñoz Joel
 
+![LogoTecnologicoDeNuevoLaredo]http://sic.cultura.gob.mx/images/63959
+
+
+> Bueno mi Nombre es Joel Rodriguez Muñoz Tengo 21 Años y Actualmente estoy cursando la carrera de ingenieria en Sistemas computacionales en el Instituto Tecnologico de Nuevo LAredo
 ## **Historial Academico**  
 
 | Nombre de la materia | Acreditada |
@@ -35,7 +39,7 @@
 | QUIMICA| 70.00|
 
 # Experiencia Laboral
- >**Cajero**
+ ##### **Cajero**
  
  >todos los empleos laborales me desempeñe en el puesto de cajero  
  >Tome experiencia en la venta de articulos  
@@ -50,5 +54,7 @@
 - Java
 
 *** Lenguajes que me gustaria aprender***
-
-
++ JavaScrit
++ Sql
++ Python
++ Html, css y php
