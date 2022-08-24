@@ -1,6 +1,6 @@
 # Presentacion Rodriguez Muñoz Joel
 
-**Historial Academico** Materias Acreditadas
+**Historial Academico**  
 
 | Nombre de la materia      | Acreditada |
 | ----------- | ----------- |
@@ -8,8 +8,8 @@
 | Matematicas Discretas  | Si    |
 
 ***Lenguajes de programacion que domino***
-*C++
-*C#
-*Html
+-C++
+-C#
+-Html
 
 
