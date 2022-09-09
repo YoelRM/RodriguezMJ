@@ -12,13 +12,14 @@
 .Caja{
     float: left;
     background-color: red;
-    border: 2px solid blue;
+    border: 5px solid black;
     /*width: 100px;*/
     width: calc((100% / 6) - 4px);
     height: 100px;
     margin: 2px;
     text-align: center;
 }
+
 
 @media screen and (max-width: 400px) and (max-width: 800px){
     #caja4{
@@ -27,13 +28,12 @@
     .caja{
         width: calc((100% / 3) - 4px);
     }
-
 }
 
 @media screen and (max-width:399px) {
-   .caja
+   .Caja
    {
-        clear: left;
+        clear: right;
         width: calc(100% - 4px);
     }
     /*.caja{
