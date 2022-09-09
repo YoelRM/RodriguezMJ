@@ -1,26 +1,39 @@
-ul
-{
-    list-style: none;
-    width: 200px;
-    height: 500px;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-ul>li>ul
+
+body
+{
+    background-color: #0A2344;
+    font-family: 'rubik',sans-serif;
+}
+
+ul
+    {
+        list-style: circle;
+        width: 200px;
+        height: 500px;
+    }
+ul > li > ul
 {
     display: none;
 }
-    ul>li:hover>ul
+    ul > li:hover > ul
 {
     display: block;
     height: 100px;
 
 }
 .opcion{
-    background: green;
-    color: white;
+    background: blue;
+    color: rgb(255, 115, 0);
 }
-body{
-    background-color: #0A2344;
-    font-family: 'rubik',sans-serif;
+
+h1{
+    padding-top: 50px;
+    color: white;
 }
 .Acordeon{
     width: 800px;
@@ -30,17 +43,11 @@ body{
     padding: 45px 45px;
 }
 a {
-    color: white;
+    color: red;
     text-decoration: none;
 }
 .subOpcion{
     padding-left: 20px;
     background: greenyellow;
-    color:White;
-}
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    color:red;
 }
