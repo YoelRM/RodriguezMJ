@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.Contenedor{
+   
+    width: 1000px;
+    height: 600px;
+    background-color: red;
+
+    display: grid;
+    grid-template-columns: 10% 45% 45%;
+    grid-template-rows: 15% 25% 15%;
+
+   /* justify-content: stretch;
+    align-content: stretch;
+
+
+    justify-items: stretch;
+    align-items: stretch;
+    */
+}
+
+#caja1{
+    height: 200px;
+}
+
+.Caja{
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid red;    
+}
