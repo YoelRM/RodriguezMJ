@@ -15,13 +15,13 @@
     grid-template-columns: 10% 45% 45%;
     grid-template-rows: 15% 25% 15%;
 
-   /* justify-content: stretch;
+   justify-content: stretch;
     align-content: stretch;
 
 
     justify-items: stretch;
     align-items: stretch;
-    */
+    
 }
 
 #caja1{
