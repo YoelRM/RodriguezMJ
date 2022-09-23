@@ -15,8 +15,8 @@
     grid-template-columns: 150px 150px 150px;
     grid-template-rows: 150px 150px 150px;
 
-   justify-content: stretch;
-    align-content: stretch;
+    justify-content: center;
+    align-content: center;
 
 
     justify-items: stretch;
@@ -25,11 +25,13 @@
 }
 
 #caja1{
-    height: 200px;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .Caja{
     background-color: aqua;
     text-align: center;
-    border: 1px solid red;    
+    border: 2px solid red;    
+
 }
