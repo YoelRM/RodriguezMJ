@@ -41,7 +41,7 @@ div.sideBar
 
 div.content
 {
-    background-color: green;
+    background-color: rgb(255, 98, 0);
     padding: 1px 16px;
     height: 100%;
     flex-grow: 4;/* Deja que crezca este elemento 4 veces mas que los demas elementos */
