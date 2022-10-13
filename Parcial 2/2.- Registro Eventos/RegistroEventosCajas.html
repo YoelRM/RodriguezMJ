@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="Contenedor">
-        <div id="caja1" class="Caja">Caja 1</div>
+        <div id="caja1" class="Caja" onclick="alert('Click en mi caja1')"> Caja 1 </div>
         <div id="caja2" class="Caja">Caja 2</div>
         <div id="caja3" class="Caja">Caja 3</div>
         <div id="caja4" class="Caja">Caja 4</div>
@@ -23,5 +23,20 @@
         <div id="caja12" class="Caja">Caja 12</div>
 
     </div>
+    <button id="miBoton1" onclick="alert('Click en Boton1')">Hola Mundo 1</button>
+    <button id="miBoton2">Hola Mundo 2</button>
+    <button id="miBoton3">Hola Mundo 3</button>
+
+    <script>
+        document.getElementById("miBoton2").onclick = function() { alert("Click en Boton 2")};
+
+
+        document.querySelector('#miBoton3').addEventListener("Click",miFuncion2);
+        document.querySelector('#miBoton3').addEventListener("Click",miFuncion1);
+
+
+        function miFuncion1() {alert("Click en Boton 3 / Funcion 1");}
+        function miFuncion2() {alert("Click en Boton 3 / Funcion 2");}
+    </script>
 </body>
 </html>

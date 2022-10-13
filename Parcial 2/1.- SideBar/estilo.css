@@ -1,0 +1,81 @@
+#opcion1:target,
+#opcion2:target,
+#opcion3:target,
+#opcion4:target{display: flex;}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cont
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+div.sideBar
+{
+ height: 100%;
+ flex-grow: 1;
+ background-color: black;
+ color: white;
+ text-align: center;
+}
+.sideBar a
+{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+.sideBar a:hover 
+{
+    color: green;
+    background-color: white;
+}
+
+div.content
+{
+    background-color: green;
+    padding: 1px 16px;
+    height: 100%;
+    flex-grow: 4;/* Deja que crezca este elemento 4 veces mas que los demas elementos */
+}
+
+@media screen and (max-width:1200px){
+    .contenedor
+    {
+       flex-direction: row;
+    }
+}
+@media screen and (max-width:599px) {
+    .contenedor
+    {
+     display:flex;
+     flex-direction: column;   
+    }
+    .sideBar
+    {
+        flex-direction: row;
+        height: auto;
+    }
+    .content
+    {
+        flex-direction: column;
+    }
+}
+@media screen and(max-width:449px) {
+    
+}
+input[type="checkbox"]{top: 0;left: 0;}
+    input[type="checkbox"]:checked + .sideBar{
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ .content{
+        margin-left: 0px;
+    }
