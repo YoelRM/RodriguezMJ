@@ -1,0 +1,11 @@
+*{
+    margin: 300;
+    padding: 0;
+    background-color: aqua;
+    text-align: center;
+}
+.Boton
+{
+    background-color: darkorange;
+    color: orangered;
+}
