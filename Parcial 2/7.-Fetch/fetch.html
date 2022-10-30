@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="caja"> </div>
+    <button id="btnPeticion">Peticion</button>
+    <button id="btnPeticionJQuery">PeticionJQuery</button>
+    <script>
+        document.getElementById("btnPeticion").addEventListener("click",function(){
+            fetch("https://api.chucknorris.io/jokes/random")
+            .then(respuesta=>respuesta.json())
+            .then(datoJs=>document.getElementById("caja").innerText=datoJs.value);
+
+        })
+
+        document.getElementById("btnPeticionJQuery").addEventListener("click",function(){
+            $.getJSON("https://api.chucknorris.io/jokes/random"), function(datoJs){
+                document.getElementById("caja").innerHTML=datoJs.value
+            }
+        })
+        
+    </script>
+   
+</body>
+</html>
