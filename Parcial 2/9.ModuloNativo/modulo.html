@@ -11,48 +11,40 @@
     <label for="cad">Cadena</label>
     <input id="cad "type="text">
     <button id="btn">Procesar</button>
+    <input id="cadMay" type="text" disabled>
 
-    <!-- importacion estatico -->
+    <!-- importacion estatico solo importamos lo que necesitamos-->
     <script type="Module">
         import {masyusculas,longitud} from "./Modulo.js";
         document.getElementById("btn").addEventListener("click",function(){
-            
             let valor=document.getElementById("cad").value;
-            let CadEnMayus=mayusculas("valor");
-
-            document.getElementById(CadEnMayus).value=CadEnMayus;
-
-            // console.log("Click")
-            // console.console.log(mayusculas("cad"));
+            let valorM=mayusculas(valor);
+            document.getElementById(cadMay).value=valorM;
         })
     </script>
-<!-- IMPORTACION CUANDO SE QUIERE IMPORTAR VARIAS COSAS ALA VEZ -->
-    <!-- <script type="Module">
+
+
+<!-- IMPORT ESTATICO PERO OFRECE TODO LO QUE PUEDA EL MODULO -->
+    <script type="module">
+        import * as funciones from "./Modulo.js";
         document.getElementById("btn").addEventListener("click",function(){
-            import"./Modulo.js";
-            .then(function(funciones))
+
             let valor=document.getElementById("cad").value;
-            let CadEnMayus=mayusculas("valor");
-
-            document.getElementById(CadEnMayus).value=CadEnMayus;
-
-            // console.log("Click")
-            // console.console.log(mayusculas("cad"));
+            let valorM=funciones.mayusculas(valor);
+            document.getElementById("cadMay").value=valorM;
         })
-    </script> -->
+    </script>
 
-    <!-- inmportacion dinamica, la cual se importara el javascript nadamas cuando el usuario lo pida-->
-    <!-- <script type="Module">
+    <!-- importacion dinamica, la cual se importara el javascript nadamas cuando el usuario lo pida-->
+    <script type="module">
         document.getElementById("btn").addEventListener("click",function(){
-            import "./Modulo.js";
-        
-            let valor=document.getElementById("cad").value;
-            let CadEnMayus=mayusculas("valor");
-            document.getElementById(CadEnMayus).value=CadEnMayus;
-
-        // console.log("Click")
-        // console.console.log(mayusculas("cad"));
-    }) -->
+            import("./Modulo.js")
+            .then(function(funciones){
+                let valor=document.getElementById("cad").value;
+                let valorM=funciones.mayusculas(valor);
+                document.getElementById("cadMay").value=valorM;
+            })
+         })
 </script>
 
 </body>
