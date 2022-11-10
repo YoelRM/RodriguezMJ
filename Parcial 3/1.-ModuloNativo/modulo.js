@@ -1,4 +1,3 @@
-
 export function mayusculas(cad){
     return cad.toUpperCase();
 }

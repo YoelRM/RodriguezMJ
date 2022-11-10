@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="Modulo.js"></script>
     <title>Document</title>
+    <script src="modulo.js"></script>
 </head>
 <body>
     <label for="cad">Cadena</label>
@@ -13,7 +13,7 @@
     <button id="btn">Procesar</button>
     <input id="cadMay" type="text" disabled>
 
-    <!-- importacion estatico solo importamos lo que necesitamos-->
+    <!-- importacion estatico solo importamos lo que necesitamos
     <script type="Module">
         import {masyusculas,longitud} from "./Modulo.js";
         document.getElementById("btn").addEventListener("click",function(){
@@ -21,31 +21,32 @@
             let valorM=mayusculas(valor);
             document.getElementById(cadMay).value=valorM;
         })
-    </script>
+    </script> -->
 
 
 <!-- IMPORT ESTATICO PERO OFRECE TODO LO QUE PUEDA EL MODULO
     <script type="module">
         import * as funciones from "./Modulo.js";
         document.getElementById("btn").addEventListener("click",function(){
-
             let valor=document.getElementById("cad").value;
             let valorM=funciones.mayusculas(valor);
             document.getElementById("cadMay").value=valorM;
         })
     </script>
+    -->
 
-     importacion dinamica, la cual se importara el javascript nadamas cuando el usuario lo pida
+
+     <!-- importacion dinamica, la cual se importara el javascript nadamas cuando el usuario lo pida -->
     <script type="module">
         document.getElementById("btn").addEventListener("click",function(){
-            import("./Modulo.js")
+            import("./modulo.js")
             .then(function(funciones){
                 let valor=document.getElementById("cad").value;
                 let valorM=funciones.mayusculas(valor);
                 document.getElementById("cadMay").value=valorM;
-            })
-         })
-</script> -->
+            });
+         });
+</script> 
 
 </body>
 </html>
