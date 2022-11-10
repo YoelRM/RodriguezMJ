@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Modulo.js"></script>
+</head>
+<body>
+    <label for="cad">Cadena</label>
+    <input id="cad "type="text">
+    <button id="btn">Procesar</button>
+
+    <!-- importacion estatico -->
+    <script type="Module">
+        import {masyusculas,longitud} from "./Modulo.js";
+        document.getElementById("btn").addEventListener("click",function(){
+            
+            let valor=document.getElementById("cad").value;
+            let CadEnMayus=mayusculas("valor");
+
+            document.getElementById(CadEnMayus).value=CadEnMayus;
+
+            // console.log("Click")
+            // console.console.log(mayusculas("cad"));
+        })
+    </script>
+<!-- IMPORTACION CUANDO SE QUIERE IMPORTAR VARIAS COSAS ALA VEZ -->
+    <!-- <script type="Module">
+        document.getElementById("btn").addEventListener("click",function(){
+            import"./Modulo.js";
+            .then(function(funciones))
+            let valor=document.getElementById("cad").value;
+            let CadEnMayus=mayusculas("valor");
+
+            document.getElementById(CadEnMayus).value=CadEnMayus;
+
+            // console.log("Click")
+            // console.console.log(mayusculas("cad"));
+        })
+    </script> -->
+
+    <!-- inmportacion dinamica, la cual se importara el javascript nadamas cuando el usuario lo pida-->
+    <!-- <script type="Module">
+        document.getElementById("btn").addEventListener("click",function(){
+            import "./Modulo.js";
+        
+            let valor=document.getElementById("cad").value;
+            let CadEnMayus=mayusculas("valor");
+            document.getElementById(CadEnMayus).value=CadEnMayus;
+
+        // console.log("Click")
+        // console.console.log(mayusculas("cad"));
+    }) -->
+</script>
+
+</body>
+</html>
