@@ -12,7 +12,7 @@
 
     // metodo con Asyn Await
     document.getElementById("btnGenReg").addEventListener("click",async()=>{
-    let respuesta = await fetch('GetRegistro.php')
+    let respuesta = await fetch('GetRegistro.php');
     let dato = await respuesta.json();
     document.getElementById("nombre").value=dato.nombre;
     document.getElementById("ocupacion").value=dato.ocupacion;
