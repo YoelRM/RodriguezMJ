@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="forma">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text">
+        <input type="button" id="btn" value="Crear PDF">
+    </form>
+
+    <script>
+        document.getElementById("nombre").focus();
+        document.getElementById("btn").addEventListener("click", async function(){
+
+            let form = document.getElementById("forma");
+            let bodyContent= new FormData(form);
+
+            let response = await fetch("http://localhost/RodriguezMJ/Parcial%203/PDF/CrearPDF.php", { 
+            method: "POST",
+            body: bodyContent
+            });
+
+            let archivoPDF = await response.blob();
+            let archivoURL = URL.createObjectURL(archivoPDF);
+            window.open(archivoURL);
+
+        })
+
+    </script>
+</body>
+</html>
