@@ -4,47 +4,167 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <link rel="stylesheet" href="Estilo.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    
     <title>Proyecto Final</title>
 </head>
 <body>
-    <form>
-        <h1>Viajes turiticos</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Logo_Pueblo_M%C3%A1gicos.jpg" width="200" height="200"  alt="/****\">
+    <form  method="post" id="formulario" action="./Altas.php">
         <div class="row">
-                <div class="form-group col-sm-12 col-md-4">
-                    <label for="Nombre">Nombres</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Nombres">
+                <div class="form-group col-sm-12 col-md-4 col-lg-4">
+                    <label for="Nombre">Nombre del pueblo magico:</label>
+                    <input type="text" class="form-control" name="idNombrePM" id="idNombrePM" placeholder="Ejemplo: Guadalajara">
                 </div>
-                
-                <div class="form-group col-sm-12 col-md-4">
-                    <label for="ocupacion" class="form-label">Ocupacion</label>
-                    <input type="text" class="form-control" id="ocupacion" placeholder="Ocupacion">
+                <div class="form-group col-sm-12 col-md-4 col-lg-4">
+                    <label for="Estado" class="form-label">Estado:</label>
+                    <input type="text" class="form-control" name="idEstadoPM" id="idEstadoPM" placeholder="Ejemplo: Jalisco">
                 </div>
                 
                 <div class="form-group col-sm-12 col-md-4 col-lg-4">
-                    <label for="NumeroTelefono" class="form-label">Numero de Telefono</label>
-                    <input type="text" class="form-control" id="NumTelefono" placeholder="Numero de Telefono">
-                </div>
-
-               
-                <button id="btnGenReg" type="button">Generar Registro</button>     
+                    <label for="Año" class="form-label">Año de Fundacion</label>
+                    <input type="text" class="form-control" name="idAñoPM" id="idAñoPM" placeholder="Ejemplo: 1987">
+                </div>               
         </div>
+        
         <div class="row">
-            <div class="form-group col-sm-12 col-md-4">
-                <label for="Nombre">Ejemplo</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ejemplo">
+            <div class="form-group col-sm-12 col-md-4 col-lg-3">
+                <label for="Habitantes">Habitantes Actuales</label>
+                <input type="text" class="form-control" name="idHabitantesPM" id="idHabitantesPM" placeholder="Ejemplo: 1000">
             </div>
-            
-            <div class="form-group col-sm-12 col-md-4">
-                <label for="Nombre">Ejemplo</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ejemplo">
+            <div class="form-group col-sm-12 col-md-4 col-lg-3">
+                <label for="ZonaTuristica">Zona Turistica</label>
+                <input type="text" class="form-control" name="idZonaTuristicaPM" id="idZonaTuristicaPM" placeholder="Ejemplo: Tequila">
             </div>
-            <div class="form-group col-sm-12 col-md-4">
-                <label for="Nombre">Ejemplo</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ejemplo">
+            <div class="form-group col-sm-12 col-md-4 col-lg-3">
+                <label for="Culturas">Culturas locales</label>
+                <input type="text" class="form-control" name="idCulturaPM" id="idCulturaPM" placeholder="Ejemplo: Danza Jarabe Tapatio">
+            </div>
+            <div class="form-group col-sm-12 col-md-4 col-lg-3">
+                <label for="Leyendas">Leyendas Urbanas</label>
+                <input type="text" class="form-control" name="idLeyendasPM" id="idLeyendasPM" placeholder="Ejemplo: la llorona">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-sm-12 col-md-4 col-lg-10">
+                <label for="Costumbres">Costumbres locales</label>
+                <input type="text" class="form-control" name="idCostumbresPM" id="idCostumbresPM" placeholder="Ejemplo: Todo festejo se lleva a la Minerva.">
+            </div>
+
+        </div>
+
+        <script>
+            document.getElementById("Modal").addEventListener("click",()=>{
+            const myModalAlternative = new bootstrap.Modal('#modal',{})
+            myModalAlternative.show();
+            })
+        </script>
+
+        <!-- Botones de accion -->
+        <div>
+            <div class="row">
+                <!-- BOTON Modal para la consulta -->
+                <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-dark" type="button">Consultar</button>
+                </div>
+                 <!-- BOTON Ingresar -->
+                <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                    <button id="btnIngresar" class="btn btn-dark" type="submit">Ingresar</button>
+                </div>
+                 <!-- BOTON Modal para la eliminar -->
+                <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                    <button id="btnEliminar" data-bs-toggle="modal" data-bs-target="#exampleModal1" class="btn btn-dark" type="button">Eliminar</button>
+                </div>
+                 <!-- BOTON para la actualizar -->
+                <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                    <button id="btnActualizar" class="btn btn-dark" type="button">Actualizar</button>
+                </div>
+            </div>
+        </div>
+        
+        <!--MODAL PARA CONSULTAR-->
+    
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Traer Registro</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group col-sm-12 col-md-12 col-lg-3">
+                    <label for="idPueblo" class="form-label">id:</label>
+                    <input type="number" class="form-control" name="idPueblo" id="idPueblo">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">cerrar</button>
+                  <button id="btnConsultar" type="button" class="btn btn-dark" data-bs-dismiss="modal">Consulta Registro</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </form>
+    
+    <!-- MODAL DE BAJAS -->
+    <form action="./baja.php" method="post">
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminacion de Registro</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group col-sm-12 col-md-12 col-lg-3">
+                        <label for="idPueblo" class="form-label">ID:</label>
+                        <input type="number" class="form-control" name="idPueblo" id="idPueblo" placeholder="ID del Pueblo">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-dark">Eliminar Registro</button>
+                </div>
+                </div>
             </div>
         </div>
     </form>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      
+
+    <!--SCRIPT CONSULTA-->
+    <script>
+        document.getElementById("btnConsultar").addEventListener("click", async function(){
+    
+    var datosFormulario = new FormData(document.getElementById("formulario"));
+   
+   let respuesta = await fetch("Consulta.php", {
+     method: 'POST', 
+      body: datosFormulario
+   })
+          let datojson = await respuesta.json();
+ 
+           document.getElementById("idPueblo").value = datojson.idPueblo;
+            document.getElementById("idNombrePM").value = datojson.Nombre;
+             document.getElementById("idEstadoPM").value = datojson.Estado;
+             document.getElementById("idAñoPM").value = datojson.Año;
+             document.getElementById("idHabitantesPM").value = datojson.Habitantes;
+             document.getElementById("idZonaTuristicaPM").value = datojson.Zona;
+             document.getElementById("idCulturaPM").value = datojson.Culturas;
+             document.getElementById("idLeyendasPM").value = datojson.Leyenda;
+             document.getElementById("idCostumbresPM").value = datojson.Costumbre;
+             console.log(datojson);
+     });
+    </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
+   
+
 </body>
 </html>
