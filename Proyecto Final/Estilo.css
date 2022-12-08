@@ -1,6 +1,11 @@
 *{
     margin: 300;
     padding: 0;
+    background-color: rgb(79, 245, 245);
+    text-align: center;
+}
+
+.fondo{
     background-image: url("./imagenes/Maza.jpg");
     text-align: center;
 }
